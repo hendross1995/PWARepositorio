@@ -1,0 +1,162 @@
+.inicio_lector,.favoritos_lector{
+  box-shadow:none;
+  background: transparent;
+}
+.pagination .page-item.active .page-link:focus {
+  background-color: #cc0000;
+}
+.pagination .page-item.active .page-link{
+  background-color: #cc0000;
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover, .dropleft .dropdown-menu .dropdown-item:active, .dropleft .dropdown-menu .dropdown-item:hover, .dropright .dropdown-menu .dropdown-item:active, .dropright .dropdown-menu .dropdown-item:hover, .dropup .dropdown-menu .dropdown-item:active, .dropup .dropdown-menu .dropdown-item:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  background-color: #cc0000!important;
+  -webkit-border-radius: .125rem;
+  border-radius: .125rem;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+  color: #fff;
+}
+.dropdown-item.active, .dropdown-item:active {
+color: #fff;
+text-decoration: none;
+background-color: #cc0000 !important;
+}
+.dropdown.bootstrap-select .dropdown-menu .dropdown-item:hover{
+background-color: #e9ecef!important;
+color: #212121;
+}
+.badge-danger{
+background-color: #cc0000 !important;
+}
+.text-danger {
+color: #cc0000 !important;
+}
+.tag.label.label-info {
+background-color: #cc0000!important;
+}
+#scrollUp{
+z-index: 1029 !important;
+}
+.breadcrumb{
+  padding: 0.4rem 1rem !important;
+}
+#paginacion{
+  margin-top: -84px !important;
+      margin-bottom: -15px !important;
+}
+
+.md-form input[type=text]:focus:not([readonly]){
+  -webkit-box-shadow: 0 1px 0 0 #cc0000;
+  box-shadow: 0 1px 0 0 #cc0000;
+  border-bottom: 1px solid #cc0000;
+}
+.dataTables_paginate{
+  float: right;
+}
+.dataTables_empty{
+  text-align: center;
+}
+.dataTables_processing{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -26px;
+  text-align: center;
+  padding: 1em 0;
+}
+.dataTables_wrapper{
+  width: 98%;
+}
+.dataTables_length > label{
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+.dataTables_length > label > select{
+  width: 50%;
+}
+.oculto{
+  display: none;
+}
+.centro{
+  text-align: center;
+}
+table.table td, table.table th {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  vertical-align: middle;
+}
+
+.bootstrap-notify-container{
+  z-index: 1050;  
+  max-width: 320px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease-in-out 0s;
+  font-size: 14px;
+}
+.bootstrap-notify-container > .close{
+  top: -9px !important;
+  right: -9px !important;
+}
+.bootstrap-notify-container > .close:hover,.bootstrap-notify-container > .close:focus {
+    color: #fff !important;
+    outline: 0;
+}
+.fondo-body{
+  background: gainsboro;
+}
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+.navbar2 {
+  background: url("../imagenes/alfaro01.jpg")no-repeat center center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+#navSecundario{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.md-form{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.div-select-filtros{
+    margin-top: 1rem;
+}
+
+.btn .dropdown-toggle .btn-light{
+  margin-top: 0;
+}
+
+/*.btn-favorito{
+    border: 2px solid #CC0000 !important;
+}*/
+
+@media only screen and (max-width: 768px) {
+    .navbar .container {
+
+    }
+}
+
+@media (max-width: 992px){
+    #navSecundario{
+        margin-top: 47px;
+        margin-bottom: 14px;
+    }
+.titulo-nav{
+    font-size: 12px;
+}
+}

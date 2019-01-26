@@ -1,0 +1,54 @@
+CONFIGURACIÓN DE POSTGRESQL EN WAMP
+	-Descomentar la option module_write que se encuentra en el archivo de configuración httpd.conf
+	-Habilitar las extensiones php: php_pgsql y php_pdo_psql
+	-Copial el archivo: "C:\wamp\bin\php\php5.5.12\libpq.dll" y pegarlo en: "C:\wamp\bin\apache\apache2.4.9\bin";
+	-En <Directory />..... Comentar la línea: Require all denied
+	-Comentar la línea: Require local. Y agregar esta: Require all granted
+
+CONFIGURACIÓN VHOSTS.CONF
+	-Agregar la siguiente configuración al archivo: 
+		C:\wamp\bin\apache\apache2.4.33\conf\extra\httpd-vhosts.conf
+			AllowOverride All
+	    	Require all granted
+	    	
+CONFIGURACIÓN PHP.INI
+	-upload_max_filesize = 1000M;
+	-post_max_size = 1000M;
+	-memory_limit = 512M / -1 //AGREGAR DE ACUERDO AL SERVIDOR
+
+
+CONFIGURACIÓN VPS
+	-Instalar:
+		-sudo apt-get install php-pgsql
+		-sudo apt-get install php-mbstring
+		-sudo apt-get install php7.2-zip
+		-sudo apt-get install php7.2-xml
+		-sudo apt-get install php7.2.gd(VERIFICAR SI FUNCIONA SIN ESTA EXTENSIÓN)
+	-En php.ini habilitar la extensión mbstring
+	-upload_max_filesize = 10M
+	-post_max_size = 10M
+	-memory_limit = 512M / -1 //AGREGAR DE ACUERDO AL SERVIDOR
+	-max_execution_time = 120
+
+	No olvidad cambiar el display_errors = Off / On y display_startup_errors = Off / On
+
+
+ENCRIPTACIÓN
+Pasos para encryptar el código js:
+	Ingresar a la página: (https://javascriptobfuscator.com/Javascript-Obfuscator.aspx || https://obfuscator.io/) y encryptar el código 2 veces, luego minificarlo en la página: https://jscompress.com/
+
+Para verificar si el código se encriptó correctamente ingresar a: http://jsbeautifier.org/
+Para minificar html ingresar a: https://www.willpeavy.com/minifier/
+
+
+COMPRIMIR IMAGEN ONELINE:
+	-https://imagecompressor.com/es/
+
+
+CONFIGURACIÓN DNS
+	Ver video: https://www.youtube.com/watch?v=IcBtwRvKWtA
+
+
+IP: 192.168.15.7
+usuario: root
+clave: montecristi2017
